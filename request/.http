@@ -1,0 +1,32 @@
+# variables globales
+@baseUrl = http://localhost:3000
+@validUserUrl = {{baseUrl}}/valid-user
+
+### Get all users
+GET {{baseUrl}}/users
+
+### Create user
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+  "email": "test@email.com",
+  "password": "1234"
+}
+
+### Create calendar
+POST {{validUserUrl}}/create-calendar
+
+{
+  "name": "Nombre de la mina",
+}
+### 
+
+### fecha
+POST {{validUserUrl}}/create-calendar
+Content-Type: application/application/json
+
+{
+  "date": "fecha introducida por el usuario"
+}
+
